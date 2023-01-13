@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include("./partials/title-meta.html", {"title": "Form Elements"})
+
+		@@include('./partials/head-css.html')
+
+    </head>
+
+    <body class="loading">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            @@include('./partials/topbar.html')
+
+            @@include('./partials/left-sidebar.html')
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        @@include("./partials/page-title.html", {"subtitle":"Forms","title":"Form Elements"})
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Input Types</h4>
+                                        <p class="sub-header">
+                                            Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.
+                                        </p>
+    
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="p-2">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="simpleinput">Text</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" id="simpleinput" class="form-control" value="Some text value...">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-email">Email</label>
+                                                            <div class="col-md-10">
+                                                                <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-password">Password</label>
+                                                            <div class="col-md-10">
+                                                                <input type="password" class="form-control" id="example-password" value="password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="password">Show/Hide Password</label>
+                                                            <div class="col-md-10">
+                                                                <div class="input-group input-group-merge">
+                                                                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                                                    <div class="input-group-text" data-password="false">
+                                                                        <span class="password-eye"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-placeholder">Placeholder</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control" id="example-placeholder" placeholder="placeholder">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-textarea">Text area</label>
+                                                            <div class="col-md-10">
+                                                                <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label">Readonly</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control" readonly="" value="Readonly value">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label">Disabled</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control" disabled="" value="Disabled value">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2  col-form-label" for="example-static">Static control</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="example-static" value="email@example.com">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-helping">Helping text</label>
+                                                            <div class="col-md-10">
+                                                                <input type="text" class="form-control" id="example-helping" placeholder="Helping text">
+                                                                <span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label">Input Select</label>
+                                                            <div class="col-md-10">
+                                                                <select class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                                <h6>Multiple select</h6>
+                                                                <select multiple class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-fileinput">Default file input</label>
+                                                            <div class="col-md-10">
+                                                                <input type="file" class="form-control" id="example-fileinput">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-date">Date</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="date" name="date" id="example-date">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-month">Month</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="month" id="example-month" name="month">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-time">Time</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="time" id="example-time" name="time">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-week">Week</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="week" id="example-week" name="week">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-number">Number</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="number" id="example-number" name="number">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label">URL</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="url" name="url">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label">Search</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="search" name="search">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label">Tel</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" type="tel" name="tel">
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="example-color">Color</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control form-control-color mw-100" type="color" id="example-color" name="color" value="#3bafda" >
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="mb-2 row">
+                                                            <label class="col-md-2 col-form-label" for="form-range">Form range</label>
+                                                            <div class="col-md-10 align-self-center">
+                                                                <input class="form-range" type="range" id="form-range" name="range" min="0" max="10">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <label for="exampleDataList" class="col-md-2 col-form-label">Datalists</label>
+                                                            <div class="col-md-10">
+                                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                                <datalist id="datalistOptions">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+    
+                                                    </form>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                </div> <!-- end card -->
+                            </div><!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Select Menu</h4>
+                                        <p class="sub-header">
+                                            Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles.
+                                        </p>
+
+                                        <select class="form-select">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                        <div class="mt-4">
+                                            <h5 class="font-14 mb-1">Select Menu Sizing</h5>
+                                            <p class="sub-header mb-0">You may also choose from small and large custom selects to match our similarly sized text inputs.</p>
+                                        
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="mt-3">
+                                                        <label class="form-label">Large Form Select</label>
+                                                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                                            <option selected>Open this select menu</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="mt-3">
+                                                        <label class="form-label">Small Form Select</label>
+                                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                            <option selected>Open this select menu</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Checkboxes & radios</h4>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                
+                                                <div class="mt-3">
+
+                                                    <h5 class="font-14 mb-2">Checkbox</h5>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Default checkbox
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            Checked checkbox
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                
+                                                <div class="mt-3">
+
+                                                    <h5 class="font-14 mb-2">Radios</h5>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            Default radio
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            Default checked radio
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div>
+                                            <h4 class="header-title mt-4">Switches</h4>
+                                                <p class="sub-header">
+                                                    A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.
+                                                </p>
+
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                                                    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                                    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Input Sizes & Group</h4>
+                                        <p class="sub-header">
+                                            Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.
+                                        </p>
+    
+                                        <div class="p-2">
+                                            <form role="form" class="form-horizontal">
+                                                <div class="mb-2 row">
+                                                    <label class="col-md-2 col-form-label" for="example-input-small">Small</label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" id="example-input-small" name="example-input-small" class="form-control form-control-sm" placeholder=".input-sm">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="mb-2 row">
+                                                    <label class="col-md-2 col-form-label" for="example-input-normal">Normal</label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" id="example-input-normal" name="example-input-normal" class="form-control" placeholder="Normal">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="mb-2 row">
+                                                    <label class="col-md-2 col-form-label" for="example-input-large">Large</label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" id="example-input-large" name="example-input-large" class="form-control form-control-lg" placeholder=".input-lg">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="mb-2 row">
+                                                    <label class="col-md-2 col-form-label">Grid Sizes</label>
+                                                    <div class="col-md-4">
+                                                        <input type="text" class="form-control" placeholder=".col-md-4">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="mb-2 row">
+                                                    <label class="col-md-2 col-form-label">Static</label>
+                                                    <div class="col-md-10">
+                                                        <div class="input-group">
+                                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="mb-2 row">
+                                                    <label class="col-md-2 col-form-label">Dropdowns</label>
+                                                    <div class="col-md-10">
+                                                        <div class="input-group mb-3">
+                                                            <button class="btn btn-primary waves-effect waves-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <i class="mdi mdi-chevron-down"></i></button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                                <div role="separator" class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Separated link</a>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row">
+                                                    <label class="col-md-2 col-form-label">Buttons</label>
+                                                    <div class="col-md-10">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                            
+                                                            <button class="btn btn-dark waves-effect waves-light" type="button">Button</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title mb-3">Basic Example</h4>
+
+                                        <form role="form">
+                                            <div class="mb-2">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-2 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title mb-3">Horizontal form</h4>
+
+                                        <form role="form">
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="inputPassword5" class="col-sm-3 col-form-label">Re Password</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" class="form-control" id="inputPassword5" placeholder="Retype Password">
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-end mb-2">
+                                                <div class="col-sm-9">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="checkmeout">
+                                                        <label class="form-check-label" for="checkmeout">Check me out</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="justify-content-end row">
+                                                <div class="col-sm-9">
+                                                    <button type="submit" class="btn btn-info waves-effect waves-light">Sign in</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+
+
+                        <!-- Inline Form -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Inline Form</h4>
+                                        <p class="sub-header">
+                                            Use the <code>.col-auto</code> class to create horizontal layouts.</strong>
+                                        </p>
+                                        <form class="row row-cols-lg-auto g-3 align-items-center">
+                                            <div class="col-12">
+                                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputPassword2" class="visually-hidden">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Confirm identity</button>
+                                        </form>
+    
+                                        <div class="row">
+    
+                                            <h6 class="font-13 mt-4">Auto-sizing</h6>
+
+                                            <form>
+                                                <div class="row gy-2 gx-3 align-items-center">
+                                                    <div class="col-auto">
+                                                        <label class="visually-hidden" for="inlineFormInput">Name</label>
+                                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Jane Doe">
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <label class="visually-hidden" for="inlineFormInputGroup">Username</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-text">@</div>
+                                                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                                            <label class="form-check-label" for="autoSizingCheck">
+                                                                Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+
+
+                        <!-- Form row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Form grid</h4>
+                                        <p class="sub-header">
+                                            You may also swap <code>.row</code> for <code>.row</code>, a variation of our standard grid row that overrides the default column gutters for tighter and more compact layouts.
+                                        </p>
+
+                                        <form>
+                                            <div class="row">
+                                                <div class="mb-2 col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                </div>
+                                                <div class="mb-2 col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="mb-2 col-md-4">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option>Choose</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+
+                                                    </select>
+                                                </div>
+
+                                                <div class="mb-2 col-md-4">
+                                                    <label for="inputCity" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                
+                                                <div class="mb-2 col-md-4">
+                                                    <label for="inputZip" class="form-label">Zip</label>
+                                                    <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="Check">
+                                                    <label class="form-check-label" for="Check">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="header-title">Floating labels</h5>
+                                        <p class="sub-header">Create beautifully simple form labels that float over your input fields.</p>
+
+                                        <form>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingnameInput" placeholder="Enter Name" value="Nik Patel">
+                                                <label for="floatingnameInput">Name</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingemailInput" placeholder="Enter Email address" value="name@example.com">
+                                                        <label for="floatingemailInput">Email address</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                                            <option selected>Open this select menu</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="floatingSelectGrid">Works with selects</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-floating mb-2">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px">123, Main st</textarea>
+                                                <label for="floatingTextarea">Comments</label>
+                                              </div>
+
+                                            <div class="mb-3">
+                                                
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="floatingCheck">
+                                                    <label class="form-check-label" for="floatingCheck">
+                                                      Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="submit" class="btn btn-primary w-md">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                @@include('./partials/footer.html')
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        @@include('./partials/right-sidebar.html')
+
+        <!-- Vendor js -->
+        <script src="../assets/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="../assets/js/app.min.js"></script>
+        
+    </body>
+</html>

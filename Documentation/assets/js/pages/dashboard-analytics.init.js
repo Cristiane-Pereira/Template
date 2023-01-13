@@ -1,0 +1,1 @@
+window.setInterval(function(){var t=Math.floor(352*Math.random()+142);$("#active-users-count").text(t),$("#active-views-count").text(Math.floor(Math.random()*t+86))},2e3),$("#usa-vectormap").vectorMap({map:"us_merc_en",backgroundColor:"transparent",regionStyle:{initial:{fill:"#3bafda"}}});
